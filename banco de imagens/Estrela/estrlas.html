@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="rating_star">
+        <div id="col_star">
+            <table cellspacing=2 cellpadding="2">
+                <tr>
+                    <td width="48" onmouseover="rate('1')" onmouseout="retira('1')" onclick="rating('1');">
+                        <img id="1" src="C:\Users\Aluno\Downloads\TalentosCode-main\banco de imagens\vecteezy_one-stars-rating-png-with-transparent-background_16314898.png" border="0" id="star1" style="cursor:pointer;width:48px;">
+                    </td>
+                    <td width="48" onmouseover="rate('2')" onmouseout="retira('2')" onclick="rating('2');">
+                        <img id="2" src="C:\Users\Aluno\Downloads\TalentosCode-main\banco de imagens\vecteezy_two-stars-rating-png-with-transparent-background_16017445.png" border="0" id="star2" style="cursor:pointer;width:48px;"></a>
+                    </td>
+                    <td width="48" onmouseover="rate('3')" onmouseout="retira('3')" onclick="rating('3');">
+                        <img id="3" src="C:\Users\Aluno\Downloads\TalentosCode-main\banco de imagens\vecteezy_three-stars-rating-png-with-transparent-background_16314363.png" border="0" id="star3" style="cursor:pointer;width:48px;"></a>
+                    </td>
+                    <td width="48" onmouseover="rate('4')" onmouseout="retira('4')" onclick="rating('4');">
+                        <img id="4" src="C:\Users\Aluno\Downloads\TalentosCode-main\banco de imagens\vecteezy_four-stars-rating-png-with-transparent-background_16016805 (1).png" border="0" id="star4" style="cursor:pointer;width:48px;"></a>
+                    </td>
+                    <td width="48" onmouseover="rate('5')" onmouseout="retira('5')" onclick="rating('5');">
+                        <img id="5" src="C:\Users\Aluno\Downloads\TalentosCode-main\banco de imagens\vecteezy_five-stars-rating-png-with-transparent-background_16017089.png" border="0" id="star5" style="cursor:pointer;width:48px;"></a>
+                    </td>
+                    <td id="note" width="65"></td>
+                </tr>
+            </table>
+        </div>              
+        </div>
+        <div id="msg"></div>
+
+
+<script>
+function cache() 
+{
+imagens = new Image();
+imagens.src='../img/star_48x48.png';
+imagens.src='../img/star1_48x48.png';
+}
+
+function rate(id)
+{
+if(id==1)
+{
+document.getElementById('note').innerHTML="<font class='ajax'><input type='hidden' name='star1' id='star1' value='1'></font>";
+}
+if(id==2)
+{
+document.getElementById('note').innerHTML="<font class='ajax'><input type='hidden' name='star2' id='star2' value='2'></font>";
+}
+if(id==3)
+{
+document.getElementById('note').innerHTML="<font class='ajax'><input type='hidden' name='star3' id='star3' value='3'></font>";
+}
+if(id==4)
+{
+document.getElementById('note').innerHTML="<font class='ajax'><input type='hidden' name='star4' id='star4' value='4'></font>";
+}
+if(id==5)
+{
+document.getElementById('note').innerHTML="<font class='ajax'><input type='hidden' name='star5' id='star5' value='5'></font>";
+}
+for(i = 0; i < id; i++)
+{
+document.getElementById(i+1).src="../img/star1_48x48.png";
+}
+}
+
+function retira(id) 
+{
+for(i = 5; i > id; i--) 
+{
+document.getElementById(i).src="../img/star_48x48.png";
+}
+}
+
+function rating(id)
+{
+var user = document.getElementById('idLogged').value;
+
+if (user != "")
+{
+
+if(id==1) 
+{
+    document.getElementById('voto').value = id;
+    document.getElementById('msg').innerHTML="<div class='alert alert-danger' style='height:48px;text-align:center;'>Detestei</div>";
+}
+
+if(id==2) 
+{
+    document.getElementById('voto').value = id;
+    document.getElementById('msg').innerHTML="<div class='alert alert-danger' style='height:48px;text-align:center;'>Não gostei</div>";
+}
+
+if(id==3) 
+{
+    document.getElementById('voto').value = id;
+    document.getElementById('msg').innerHTML="<div class='alert alert-warning' style='height:48px;text-align:center;'>Razoável</div>";
+}
+
+if(id==4) 
+{
+    document.getElementById('voto').value = id;
+    document.getElementById('msg').innerHTML="<div class='alert alert-info' style='height:48px;text-align:center;'>Gostei</div>";
+}
+
+if(id==5) 
+{
+    document.getElementById('voto').value = id;
+    document.getElementById('msg').innerHTML="<div class='alert alert-success' style='height:48px;text-align:center;'>Adorei</div>";
+}       
+}
+else
+{
+    document.getElementById('msg').innerHTML="<div class='alert alert-danger' style='height:48px;text-align:center;'><strong>Erro ao avaliar!</strong> É necessário realizar o login para enviar um comentário.</div>";
+}
+}
+</script>
+</body>
+</html>
