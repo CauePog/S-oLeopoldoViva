@@ -1,0 +1,18 @@
+O Eagle Care é uma startup criadora do aplicativo multiplataforma de saúde, que também leva seu nome. A solução é voltada para os setores público e privado, possuindo as seguintes funcionalidades agregadas:
+
+– autoexame (Covid-19);
+
+– chat online;
+
+– teleconsulta;
+
+– controle de medicação;
+
+– agendamento de consultas (presencial e remota).
+
+Em 2019 o aplicativo foi testado e validado nos municípios de Mampituba-RS, Morrinhos do Sul-RS e, em Três Cachoeiras-RS. A pesquisa foi supervisionada pelo Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul (IFRS), Campus Porto Alegre, com a autorização do Ministério da Saúde. Também em 2019, a empresa foi selecionada no programa Conecta Startup Brasil, concorrendo com mais de 1.800 equipes empreendedoras de todo o país, foi uma das 20 empresas da região Sul.
+
+O aplicativo Eagle Care é desenvolvido pela Eagle Inteligência Digital, uma empresa dedicada a inovação e tecnologia, colaborarando para que seus clientes e parceiros voem cada vez mais alto, potencializando suas ações e maximizando seus resultados.
+
+Em março de 2020, em parceria com o Parque Tecnológico São Leopoldo (Tecnosinos) e a Universidade do Vale do Rio dos Sinos (Unisinos), lançou o desafio Covid-19, com a realização de um Hackathon online e voluntário para o desenvolvimento de funcionalidades para auxiliar pessoas e municípios a combater as consequências do Covid-19 em nossa sociedade.
+
